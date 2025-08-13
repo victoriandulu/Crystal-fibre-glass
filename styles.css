@@ -56,6 +56,10 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     background: var(--off-white);
+  
+    padding-top: var(--header-height, 98px);
+
+
 }
 
 .container {
@@ -87,16 +91,19 @@ h1, h2, h3, h4, h5, h6 {
    =============================== */
 
 header {
-    position: fixed;
+    position: fixed !important;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px) saturate(180%);
-    z-index: 1000;
+    z-index: 999999 !important;
     padding: 1.2rem 0;
-    transition: var(--transition-smooth);
     border-bottom: 1px solid rgba(76, 129, 40, 0.1);
+    transition: var(--transition-smooth);
 }
+
 
 header.scrolled {
     padding: 0.8rem 0;
@@ -115,7 +122,7 @@ nav {
 
 .logo {
     font-family: var(--font-heading);
-    font-size: 1.8rem;
+    font-size: 28;
     font-weight: 700;
     color: var(--primary);
     text-decoration: none;
