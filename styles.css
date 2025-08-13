@@ -1124,7 +1124,6 @@ footer::before {
 @media (max-width: 1024px) {
     .hero-title {
         font-size: 3.5rem;
-        padding: 70px;
     }
     
     .section-title {
