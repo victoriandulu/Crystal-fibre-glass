@@ -659,127 +659,23 @@
     </footer>
 
     <script >
-        document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all functionality
-    initializeNavigation();
-    initializeScrollEffects();
-    initializeAnimations();
-    initializeProductInteractions();
-    initializeFormHandling();
+   document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById("menu-btn");
+    const sidebar = document.getElementById("sidebar");
+
+    menuBtn.addEventListener("click", function () {
+        sidebar.classList.toggle("active");
+        menuBtn.classList.toggle("active"); // change hamburger to X
+    });
+
+    // Optional: Close when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+            sidebar.classList.remove("active");
+            menuBtn.classList.remove("active");
+        }
+    });
 });
-
-// ===============================
-//   NAVIGATION & MOBILE MENU
-// ===============================
-
-function initializeNavigation() {
-    const menuBtn = document.getElementById('menu-btn');
-    const closeBtn = document.getElementById('close-btn');
-    const sidebar = document.getElementById('sidebar');
-    const header = document.querySelector('header');
-    const sidebarLinks = document.querySelectorAll('#sidebar .nav-links a');
-
-    // Open sidebar
-    menuBtn?.addEventListener('click', () => {
-        sidebar.classList.add('active');
-        menuBtn.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    });
-
-    // Close sidebar
-    function closeSidebar() {
-        sidebar.classList.remove('active');
-        menuBtn.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-
-    closeBtn?.addEventListener('click', closeSidebar);
-
-    // Close sidebar when clicking links
-    sidebarLinks.forEach(link => {
-        link.addEventListener('click', closeSidebar);
-    });
-
-    // Close sidebar on escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && sidebar.classList.contains('active')) {
-            closeSidebar();
-        }
-    });
-
-    // Close sidebar when clicking outside
-    document.addEventListener('click', (e) => {
-        if (sidebar.classList.contains('active') && 
-            !sidebar.contains(e.target) && 
-            !menuBtn.contains(e.target)) {
-            closeSidebar();
-        }
-    });
-
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                const headerOffset = 100;
-                const elementPosition = targetElement.offsetTop;
-                const offsetPosition = elementPosition - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-}
-
-// ===============================
-//   SCROLL EFFECTS
-// ===============================
-
-function initializeScrollEffects() {
-    const header = document.querySelector('header');
-    let lastScrollTop = 0;
-
-    window.addEventListener('scroll', () => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Header background change
-        if (scrollTop > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-
-        // Header hide/show on scroll
-        if (scrollTop > lastScrollTop && scrollTop > 200) {
-            // Scrolling down
-            header.style.transform = 'translateY(-100%)';
-        } else {
-            // Scrolling up
-            header.style.transform = 'translateY(0)';
-        }
-        
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    });
-
-    // Parallax effect for hero section
-    const hero = document.querySelector('.hero');
-    const heroContent = document.querySelector('.hero-content');
-    
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const rate = scrolled * -0.5;
-        
-        if (hero && heroContent && scrolled < hero.offsetHeight) {
-            heroContent.style.transform = `translateY(${rate}px)`;
-        }
-    });
-}
 // FOR PRODUCTS
 function orderViaWhatsApp(name, price, description, image) {
     const phoneNumber = "254753063168"; // Replace with your WhatsApp number
