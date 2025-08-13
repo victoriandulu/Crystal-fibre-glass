@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Fibre Glass - Premium Flower Pots & Planters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <span class="logo-icon">✨</span>
+                Crystal Fibre Glass
+            </a>
+            
+            <button class="hamburger" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Why Choose Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <a href="#" class="logo">
+                <span class="logo-icon">✨</span>
+                Crystal Fibre Glass
+            </a>
+            <button class="close-btn" id="close-btn">&times;</button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#features">Why Choose Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="pot-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Gradient & Particles Overlay -->
+    <div class="hero-background">
+        <div class="hero-gradient"></div>
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="hero-content">
+        <div class="hero-badge">Premium Quality Since 2020</div>
+        <h1 class="hero-title">
+            Where <span class="gradient-text">Flowers</span> Meet 
+            <span class="gradient-text">Artistry</span>
+        </h1>
+        <p class="hero-subtitle">
+            Handcrafted premium fibre pots and vases that transform spaces into timeless showcases of nature's beauty
+        </p>
+        <div class="hero-buttons">
+            <a href="#products" class="cta-button primary">Explore Collection</a>
+            <a href="#about" class="cta-button secondary">Our Story</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Unique Designs</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">5★</div>
+                <div class="stat-label">Customer Rating</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+   <!-- Products Section -->
+<section id="products" class="products">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Our Collection</div>
+            <h2 class="section-title">Premium Fibre Pots & Vases</h2>
+            <p class="section-subtitle">Each piece is a masterpiece, crafted to perfection</p>
+        </div>
+
+        <div class="products-grid">
+
+            <!-- Product 1 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Classic Terra Collection',
+                'Ksh 7999',
+                'Traditional elegance meets modern durability. Perfect for herbs and small plants with excellent drainage design.',
+                'pots.jpg'
+            )">
+                <div class="product-image">
+                    <img src="pots.jpg" alt="Classic Terra Collection" loading="lazy">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Classic Terra Collection</h3>
+                    <p class="product-description">
+                        Traditional elegance meets modern durability. Perfect for herbs and small plants with excellent drainage design.
+                    </p>
+                    <div class="product-price">
+                        <span class="price">Ksh 7999</span>
+                        <span class="original-price">Ksh 8000</span>
+                    </div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Classic Terra Collection','Ksh 7999','Traditional elegance meets modern durability. Perfect for herbs and small plants with excellent drainage design.','pots.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Modern Luxury Planter',
+                'Ksh 8000',
+                'Sleek contemporary design with glossy finish, perfect for sophisticated indoor spaces and modern décor.',
+                'pot-1.jpg'
+            )">
+                <div class="product-image">
+                    <img src="pot-1.jpg" alt="Modern Luxury Planter" loading="lazy">
+                    <div class="product-badge">New Arrival</div>
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Modern Luxury Planter</h3>
+                    <p class="product-description">
+                        Sleek contemporary design with glossy finish, perfect for sophisticated indoor spaces and modern décor.
+                    </p>
+                    <div class="product-price"><span class="price">Ksh 8000</span></div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Modern Luxury Planter','Ksh 8000','Sleek contemporary design with glossy finish, perfect for sophisticated indoor spaces and modern décor.','pot-1.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Artisan Hanging Collection',
+                'Ksh 8000',
+                'Decorative suspended planters perfect for cascading flowers and trailing succulents.',
+                'pot-3.jpg'
+            )">
+                <div class="product-image">
+                    <img src="pot-3.jpg" alt="Artisan Hanging Collection" loading="lazy">
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Artisan Hanging Collection</h3>
+                    <p class="product-description">
+                        Decorative suspended planters perfect for cascading flowers and trailing succulents.
+                    </p>
+                    <div class="product-price"><span class="price">Ksh 8000</span></div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Artisan Hanging Collection','Ksh 8000','Decorative suspended planters perfect for cascading flowers and trailing succulents.','pot-3.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Rustic Garden Set',
+                'Ksh 8000',
+                'Charming trio that brings farmhouse elegance to any garden or patio setting.',
+                'three-pots.jpg'
+            )">
+                <div class="product-image">
+                    <img src="three-pots.jpg" alt="Rustic Garden Set" loading="lazy">
+                    <div class="product-badge">Bundle Deal</div>
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Rustic Garden Set</h3>
+                    <p class="product-description">
+                        Charming trio that brings farmhouse elegance to any garden or patio setting.
+                    </p>
+                    <div class="product-price">
+                        <span class="price">Ksh 8000</span>
+                        <span class="original-price">Ksh 8000</span>
+                    </div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Rustic Garden Set','Ksh 8000','Charming trio that brings farmhouse elegance to any garden or patio setting.','three-pots.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Designer Statement Vase',
+                'Ksh 8000',
+                'Bold architectural design that serves as both planter and art piece for statement spaces.',
+                'pot-g.jpg'
+            )">
+                <div class="product-image">
+                    <img src="pot-g.jpg" alt="Designer Statement Vase" loading="lazy">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Designer Statement Vase</h3>
+                    <p class="product-description">
+                        Bold architectural design that serves as both planter and art piece for statement spaces.
+                    </p>
+                    <div class="product-price"><span class="price">Ksh 8000</span></div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Designer Statement Vase','Ksh 8000','Bold architectural design that serves as both planter and art piece for statement spaces.','pot-g.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Minimalist Collection',
+                'Ksh 8000',
+                'Clean lines and subtle textures for the modern minimalist aesthetic.',
+                'pot-f.jpg'
+            )">
+                <div class="product-image">
+                    <img src="pot-f.jpg" alt="Minimalist Collection" loading="lazy">
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Minimalist Collection</h3>
+                    <p class="product-description">
+                        Clean lines and subtle textures for the modern minimalist aesthetic.
+                    </p>
+                    <div class="product-price"><span class="price">Ksh 8000</span></div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Minimalist Collection','Ksh 8000','Clean lines and subtle textures for the modern minimalist aesthetic.','pot-f.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Designer Statement Vase',
+                'Ksh 8000',
+                'Bold architectural design that serves as both planter and art piece for statement spaces.',
+                'pot-g.jpg'
+            )">
+                <div class="product-image">
+                    <img src="pot-a.jpg" alt="Designer Statement Vase" loading="lazy">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Designer Statement Vase</h3>
+                    <p class="product-description">
+                        Bold architectural design that serves as both planter and art piece for statement spaces.
+                    </p>
+                    <div class="product-price"><span class="price">Ksh 8000</span></div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Designer Statement Vase','Ksh 8000','Bold architectural design that serves as both planter and art piece for statement spaces.','pot-g.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Designer Statement Vase',
+                'Ksh 8000',
+                'Bold architectural design that serves as both planter and art piece for statement spaces.',
+                'pot-g.jpg'
+            )">
+                <div class="product-image">
+                    <img src="pot-b.jpg" alt="Designer Statement Vase" loading="lazy">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Designer Statement Vase</h3>
+                    <p class="product-description">
+                        Bold architectural design that serves as both planter and art piece for statement spaces.
+                    </p>
+                    <div class="product-price"><span class="price">Ksh 8000</span></div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Designer Statement Vase','Ksh 8000','Bold architectural design that serves as both planter and art piece for statement spaces.','pot-g.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Designer Statement Vase',
+                'Ksh 8000',
+                'Bold architectural design that serves as both planter and art piece for statement spaces.',
+                'pot-g.jpg'
+            )">
+                <div class="product-image">
+                    <img src="pot-c.jpg" alt="Designer Statement Vase" loading="lazy">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Designer Statement Vase</h3>
+                    <p class="product-description">
+                        Bold architectural design that serves as both planter and art piece for statement spaces.
+                    </p>
+                    <div class="product-price"><span class="price">Ksh 8000</span></div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Designer Statement Vase','Ksh 8000','Bold architectural design that serves as both planter and art piece for statement spaces.','pot-g.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Designer Statement Vase',
+                'Ksh 8000',
+                'Bold architectural design that serves as both planter and art piece for statement spaces.',
+                'pot-g.jpg'
+            )">
+                <div class="product-image">
+                    <img src="pot-e.jpg" alt="Designer Statement Vase" loading="lazy">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Designer Statement Vase</h3>
+                    <p class="product-description">
+                        Bold architectural design that serves as both planter and art piece for statement spaces.
+                    </p>
+                    <div class="product-price"><span class="price">Ksh 8000</span></div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Designer Statement Vase','Ksh 8000','Bold architectural design that serves as both planter and art piece for statement spaces.','pot-g.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+            <!-- Product 11 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Designer Statement Vase',
+                'Ksh 8000',
+                'Bold architectural design that serves as both planter and art piece for statement spaces.',
+                'pot-g.jpg'
+            )">
+                <div class="product-image">
+                    <img src="pot-k.jpg" alt="Designer Statement Vase" loading="lazy">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Designer Statement Vase</h3>
+                    <p class="product-description">
+                        Bold architectural design that serves as both planter and art piece for statement spaces.
+                    </p>
+                    <div class="product-price"><span class="price">Ksh 8000</span></div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Designer Statement Vase','Ksh 8000','Bold architectural design that serves as both planter and art piece for statement spaces.','pot-g.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="product-card" onclick="orderViaWhatsApp(
+                'Designer Statement Vase',
+                'Ksh 8000',
+                'Bold architectural design that serves as both planter and art piece for statement spaces.',
+                'pot-g.jpg'
+            )">
+                <div class="product-image">
+                    <img src="pot-d.jpg" alt="Designer Statement Vase" loading="lazy">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-overlay"><button class="quick-view">Quick View</button></div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Designer Statement Vase</h3>
+                    <p class="product-description">
+                        Bold architectural design that serves as both planter and art piece for statement spaces.
+                    </p>
+                    <div class="product-price"><span class="price">Ksh 8000</span></div>
+                    <button class="add-to-cart" onclick="event.stopPropagation(); orderViaWhatsApp(
+                        'Designer Statement Vase','Ksh 8000','Bold architectural design that serves as both planter and art piece for statement spaces.','pot-g.jpg')">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="products-cta">
+            <a href="#contact" class="cta-button primary">View Full Collection</a>
+        </div>
+    </div>
+</section>
+      <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">About Crystal Fibre Glass</div>
+                <h2 class="section-title">Planting Beauty in Every Corner</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        At <strong>Crystal Fibre Glass</strong>, we believe your flowers deserve more than just a pot — they deserve a stage. That's why we design and manufacture premium fibre flower pots and vases that don't just hold plants… they tell stories.
+                    </p>
+                    
+                    <p>
+                        From sleek modern designs to timeless classics, every piece we make is handcrafted with precision, passion, and a dash of artistry. Our fibre pots are lightweight yet durable, weather-resistant, and built to thrive in homes, gardens, offices, and outdoor spaces — just like the plants they carry.
+                    </p>
+                    
+                    <p>
+                        We're not just in the business of pots; we're in the business of elevating spaces. Whether you're a home décor enthusiast, a landscaper creating masterpieces, or a wholesaler stocking only the best, we're here to make sure your plants stand tall and proud.
+                    </p>
+                </div>
+                
+                <div class="vision-mission">
+                    <div class="vm-card vision">
+                        <div class="vm-icon">🌟</div>
+                        <h3>Vision</h3>
+                        <ul>
+                            <li>To be the most trusted name in premium fibre pots and vases</li>
+                            <li>Transforming spaces into timeless showcases of nature's beauty</li>
+                            <li>Inspiring a lifestyle where greenery meets refined design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="vm-card mission">
+                        <div class="vm-icon">🎯</div>
+                        <h3>Mission</h3>
+                        <ul>
+                            <li>To craft exquisite, durable pots that elevate every plant they hold</li>
+                            <li>Blending artistry and innovation for unmatched quality</li>
+                            <li>Delivering beauty that endures, from our hands to your space</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Why Crystal Fibre Glass</div>
+                <h2 class="section-title">Crafted for Excellence</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        🌱
+                    </div>
+                    <h3 class="feature-title">Premium Quality</h3>
+                    <p>Each planter is meticulously handcrafted using the finest materials for lasting beauty and unmatched durability.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        ⚡
+                    </div>
+                    <h3 class="feature-title">Lightweight & Durable</h3>
+                    <p>Our advanced fibre technology delivers strength without weight, making handling and placement effortless.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        🛡️
+                    </div>
+                    <h3 class="feature-title">Weather Resistant</h3>
+                    <p>Built to withstand all seasons - from scorching sun to heavy rains, our pots maintain their beauty year-round.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        🚚
+                    </div>
+                    <h3 class="feature-title">Fast Delivery</h3>
+                    <p>Quick and secure shipping nationwide. Most orders delivered within 3-5 business days with careful packaging.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        💬
+                    </div>
+                    <h3 class="feature-title">Expert Support</h3>
+                    <p>Our design consultants help you choose the perfect pieces to complement your space and plant requirements.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        ♻️
+                    </div>
+                    <h3 class="feature-title">Eco-Conscious</h3>
+                    <p>Committed to sustainability with eco-friendly materials and responsible manufacturing processes for a greener tomorrow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Get In Touch</div>
+                <h2 class="section-title">Let's Create Something Beautiful Together</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Visit Our Showroom</h3>
+                        <p>Nairobi, Kenya<br>
+                        Open Mon-Sat: 8AM - 6PM<br>
+                        Sunday: 10AM - 4PM</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+254753063168">+254 753 063 168</a><br>
+                        Available 24/7 for orders<br>
+                        Customer support: 8AM - 8PM</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:info@crystalfibre.co.ke">info@crystalfibre.co.ke</a><br>
+                        For inquiries & custom orders<br>
+                        Response within 24 hours</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/254753063168" target="_blank">Message us directly</a><br>
+                        Quick responses & order tracking<br>
+                        Instant customer support</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Inquiry Type</option>
+                                <option value="product">Product Information</option>
+                                <option value="custom">Custom Order</option>
+                                <option value="wholesale">Wholesale Inquiry</option>
+                                <option value="support">Customer Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your project or requirements..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <span class="logo-icon">✨</span>
+                    Crystal Fibre Glass
+                </div>
+                <p>Planting beauty in every corner since 2020. Where flowers meet artistry.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="WhatsApp">💬</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#products">Flower Pots</a></li>
+                    <li><a href="#products">Designer Vases</a></li>
+                    <li><a href="#products">Garden Sets</a></li>
+                    <li><a href="#products">Custom Orders</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>📞 +254 753 063 168</li>
+                    <li>✉️ info@crystalfibre.co.ke</li>
+                    <li>📍 Nairobi, Kenya</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Crystal Fibre Glass. All rights reserved. | Crafted with ❤️ for plant lovers</p>
+        </div>
+    </footer>
+
+    <script >
+        document.addEventListener('DOMContentLoaded', function() {
+    // Initialize all functionality
+    initializeNavigation();
+    initializeScrollEffects();
+    initializeAnimations();
+    initializeProductInteractions();
+    initializeFormHandling();
+});
+
+// ===============================
+//   NAVIGATION & MOBILE MENU
+// ===============================
+
+function initializeNavigation() {
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const sidebar = document.getElementById('sidebar');
+    const header = document.querySelector('header');
+    const sidebarLinks = document.querySelectorAll('#sidebar .nav-links a');
+
+    // Open sidebar
+    menuBtn?.addEventListener('click', () => {
+        sidebar.classList.add('active');
+        menuBtn.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Close sidebar
+    function closeSidebar() {
+        sidebar.classList.remove('active');
+        menuBtn.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    closeBtn?.addEventListener('click', closeSidebar);
+
+    // Close sidebar when clicking links
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', closeSidebar);
+    });
+
+    // Close sidebar on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && sidebar.classList.contains('active')) {
+            closeSidebar();
+        }
+    });
+
+    // Close sidebar when clicking outside
+    document.addEventListener('click', (e) => {
+        if (sidebar.classList.contains('active') && 
+            !sidebar.contains(e.target) && 
+            !menuBtn.contains(e.target)) {
+            closeSidebar();
+        }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const headerOffset = 100;
+                const elementPosition = targetElement.offsetTop;
+                const offsetPosition = elementPosition - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+// ===============================
+//   SCROLL EFFECTS
+// ===============================
+
+function initializeScrollEffects() {
+    const header = document.querySelector('header');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Header background change
+        if (scrollTop > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        // Header hide/show on scroll
+        if (scrollTop > lastScrollTop && scrollTop > 200) {
+            // Scrolling down
+            header.style.transform = 'translateY(-100%)';
+        } else {
+            // Scrolling up
+            header.style.transform = 'translateY(0)';
+        }
+        
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+
+    // Parallax effect for hero section
+    const hero = document.querySelector('.hero');
+    const heroContent = document.querySelector('.hero-content');
+    
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * -0.5;
+        
+        if (hero && heroContent && scrolled < hero.offsetHeight) {
+            heroContent.style.transform = `translateY(${rate}px)`;
+        }
+    });
+}
+// FOR PRODUCTS
+function orderViaWhatsApp(name, price, description, image) {
+    const phoneNumber = "254753063168"; // Replace with your WhatsApp number
+    const message = `Hello, I am interested in the following product:\n\n` +
+        `*Product:* ${name}\n` +
+        `*Price:* ${price}\n` +
+        `*Description:* ${description}\n\n` +
+        `Image: ${window.location.origin}/${image}`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+}
+
+    </script>
+</body>
+</html>
